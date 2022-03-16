@@ -17,7 +17,7 @@ const country = "us"; //making it a static country but it can be changed to dyna
 const apiKey = "a010608ea77d6e404ebb9376683e77fb";
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + "." + d.getDate() + "." + d.getFullYear();
+let newDate = d.getMonth() +1+ "." + d.getDate() + "." + d.getFullYear();
 
 
 // Event listener to add function to existing HTML DOM element
