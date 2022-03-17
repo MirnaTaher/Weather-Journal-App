@@ -74,7 +74,7 @@ const postData = async (url = "", data = {}) => {
     }),
   });
   try {
-    const newData = await request.json();
+    const newData = await request.text();
     return newData;
   } catch (error) {
     console.error("error", error);
@@ -88,7 +88,7 @@ const updateUI = async ()=>{
         const data = await request.json();
         date.innerText = `Date: ${data.date}`;
         content.innerText = `Feelings: ${data.content}`;
-        temp.innerText = `Temperature: ${data.temp}`;
+        temp.innerText = `Temperature: ${data.temp} °F`;
     }
     catch(error){
         console.error("error",error);
