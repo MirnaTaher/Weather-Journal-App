@@ -14,7 +14,7 @@ let feelingsVal;
 // Personal API Key for OpenWeatherMap API
 const baseURL = "http://api.openweathermap.org/data/2.5/weather?zip=";
 const country = "us"; //making it a static country but it can be changed to dynamic later on
-const apiKey = "a010608ea77d6e404ebb9376683e77fb";
+const apiKey = "a010608ea77d6e404ebb9376683e77fb&units=imperial";
 // Create a new date instance dynamically with JS
 let d = new Date();
 let newDate = d.getMonth() +1+ "." + d.getDate() + "." + d.getFullYear();
